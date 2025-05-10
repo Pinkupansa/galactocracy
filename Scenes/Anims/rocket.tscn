@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://bm7qnkyxndfy3"]
+
+[ext_resource type="Texture2D" uid="uid://bgklq5n1sjftw" path="res://Assets/Anims/petou/petou1.png" id="1_acccx"]
+[ext_resource type="Texture2D" uid="uid://80nsji6wxxty" path="res://Assets/Sprites/rocket.png" id="1_wde2a"]
+[ext_resource type="Texture2D" uid="uid://cfnt04q4k7luf" path="res://Assets/Anims/petou/petou2.png" id="2_5j7ww"]
+[ext_resource type="Texture2D" uid="uid://b3d4ny7e7406t" path="res://Assets/Anims/petou/petou3.png" id="3_oofmx"]
+[ext_resource type="Texture2D" uid="uid://b560qicts8ngb" path="res://Assets/Anims/petou/petou4.png" id="4_63er1"]
+[ext_resource type="Texture2D" uid="uid://cml72r6g54mo5" path="res://Assets/Anims/petou/petou5.png" id="5_hsspa"]
+[ext_resource type="Texture2D" uid="uid://2d3tk3u2enux" path="res://Assets/Anims/petou/petou6.png" id="6_pcp6q"]
+[ext_resource type="Texture2D" uid="uid://keedtsmbh41p" path="res://Assets/Anims/petou/petou7.png" id="7_60lkk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mm0f2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_acccx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5j7ww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oofmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_63er1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hsspa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pcp6q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_60lkk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_acccx"]
+radius = 3.0
+height = 32.0
+
+[node name="Rocket" type="RigidBody2D"]
+
+[node name="flamme" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 25)
+sprite_frames = SubResource("SpriteFrames_mm0f2")
+autoplay = "default"
+
+[node name="Rocket" type="Sprite2D" parent="."]
+texture = ExtResource("1_wde2a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_acccx")

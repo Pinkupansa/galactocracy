@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3 uid="uid://bwv2sg61kqf4m"]
+
+[ext_resource type="Texture2D" uid="uid://ht2xvcotya7c" path="res://Assets/Sprites/planet_depart.png" id="1_gkxyt"]
+[ext_resource type="Texture2D" uid="uid://cfv3hosf0wa0g" path="res://Assets/Anims/jefferson/jefferson1.png" id="2_qqivp"]
+[ext_resource type="Texture2D" uid="uid://db2okbw32nlu6" path="res://Assets/Anims/jefferson/jefferson2.png" id="3_7ytdy"]
+[ext_resource type="Texture2D" uid="uid://bx1ls27pq6m5t" path="res://Assets/Anims/jefferson/jefferson3.png" id="4_gld7i"]
+[ext_resource type="Texture2D" uid="uid://8oxefdyvwqab" path="res://Assets/Anims/jefferson/jefferson4.png" id="5_1dt4x"]
+[ext_resource type="Texture2D" uid="uid://hemrouk7txhb" path="res://Assets/Anims/jefferson/jefferson5.png" id="6_rnjb4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3vi0m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qqivp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7ytdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gld7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1dt4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rnjb4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gkxyt"]
+radius = 33.2415
+
+[node name="PlaneteBleue" type="RigidBody2D"]
+
+[node name="PlanetDepart" type="Sprite2D" parent="."]
+position = Vector2(1, 1)
+texture = ExtResource("1_gkxyt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0, 0.470588, 1, 0.556863)
+sprite_frames = SubResource("SpriteFrames_3vi0m")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gkxyt")

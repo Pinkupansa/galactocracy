@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=3 uid="uid://dj8mui4yod3q1"]
+
+[ext_resource type="Texture2D" uid="uid://bku5q40gfx3sy" path="res://Assets/Anims/planet_anneau/planet_anneau1.png" id="1_m3m5b"]
+[ext_resource type="Texture2D" uid="uid://brm47sipk3d71" path="res://Assets/Anims/planet_anneau/planet_anneau2.png" id="2_4oowg"]
+[ext_resource type="Texture2D" uid="uid://dk7g6cldqk8at" path="res://Assets/Anims/planet_anneau/planet_anneau3.png" id="3_ijyus"]
+[ext_resource type="Texture2D" uid="uid://d08b5v1bf6rmf" path="res://Assets/Anims/planet_anneau/planet_anneau4.png" id="4_gveob"]
+[ext_resource type="Texture2D" uid="uid://bs5alakvg8xev" path="res://Assets/Anims/planet_anneau/planet_anneau5.png" id="5_maj50"]
+[ext_resource type="Texture2D" uid="uid://bxarm2642msvi" path="res://Assets/Anims/planet_anneau/planet_anneau6.png" id="6_ay7pv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sc06t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m3m5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4oowg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ijyus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gveob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_maj50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ay7pv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d1gjx"]
+radius = 31.5753
+
+[node name="PlaneteJaune" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sc06t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_d1gjx")

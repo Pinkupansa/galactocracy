@@ -1,0 +1,64 @@
+[gd_scene load_steps=13 format=3 uid="uid://bia64wakxrs8k"]
+
+[ext_resource type="Texture2D" uid="uid://ddrdi3stnj7me" path="res://Assets/Anims/planet_verte/planet_liberty1.png" id="1_750tb"]
+[ext_resource type="Texture2D" uid="uid://jhjcmobpsgqw" path="res://Assets/Anims/planet_verte/planet_liberty2.png" id="2_r0q8w"]
+[ext_resource type="Texture2D" uid="uid://bmjrktlmdfrhc" path="res://Assets/Anims/planet_verte/planet_liberty3.png" id="3_2s5av"]
+[ext_resource type="Texture2D" uid="uid://5x28ek2sdqw0" path="res://Assets/Anims/planet_verte/planet_liberty4.png" id="4_giw6d"]
+[ext_resource type="Texture2D" uid="uid://1heycnx8wmc8" path="res://Assets/Anims/planet_verte/planet_liberty5.png" id="5_2em22"]
+[ext_resource type="Texture2D" uid="uid://c5yt53hl63iud" path="res://Assets/Anims/planet_verte/planet_liberty6.png" id="6_wjo7p"]
+[ext_resource type="Texture2D" uid="uid://bxp4tep2ooekm" path="res://Assets/Anims/planet_verte/planet_liberty7.png" id="7_x5806"]
+[ext_resource type="Texture2D" uid="uid://b2uenrl43ge0o" path="res://Assets/Anims/planet_verte/planet_liberty8.png" id="8_i8xab"]
+[ext_resource type="Texture2D" uid="uid://cewem11pnsptg" path="res://Assets/Anims/planet_verte/planet_liberty9.png" id="9_lq0dy"]
+[ext_resource type="Texture2D" uid="uid://dpxlstkxa8usf" path="res://Assets/Anims/planet_verte/planet_liberty10.png" id="10_ko5sr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_750tb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_750tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_r0q8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2s5av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_giw6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2em22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wjo7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x5806")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i8xab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lq0dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ko5sr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r0q8w"]
+radius = 32.0624
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_750tb")
+autoplay = "default"
+frame = 6
+frame_progress = 0.538536
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r0q8w")
