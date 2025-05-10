@@ -1,2 +1,6 @@
 res://Scenes/test.tscn
 res://Scenes/rocket.tscn
+res://Scenes/main_menu.gd
+res://Scenes/main_menu.tscn
+res://Scenes/levels.tscn
+res://Scenes/levels.gd
