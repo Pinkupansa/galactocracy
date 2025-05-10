@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746895112
+::res://::1746895466
 icon.svg::CompressedTexture2D::4170759733338597326::1746891799::1746892917::1::::<><><>0<>0<>d7ea048429296e924eb68246d9661873<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1746894190
-::res://Assets/Sprites/::1746895004
+::res://Assets/Sprites/::1746897258
 asteroide.png::CompressedTexture2D::7941739121502205556::1728144088::1746894436::1::::<><><>0<>0<>9d5e5c0cfe03b52be38cfc183d735623<>res://.godot/imported/asteroide.png-b313da912a8aef7f81f0ad07286df13e.ctex::
 fond2.png::CompressedTexture2D::4452500141143411090::1728145075::1746894436::1::::<><><>0<>0<>4c393626f61c7abfa6fa5f5669d83d4f<>res://.godot/imported/fond2.png-14b44cdb7957723702834da1f98adc60.ctex::
 fond3.png::CompressedTexture2D::4445446080173730731::1728145153::1746894436::1::::<><><>0<>0<>1f06dfbfb5484a7f940db7faa63eed79<>res://.godot/imported/fond3.png-0224e51c8ee574401c8b9d5a32fc7d95.ctex::
@@ -15,8 +15,18 @@ debris1.png::CompressedTexture2D::6613030929849420920::1728154308::1746894436::1
 debris2.png::CompressedTexture2D::8559677044834047179::1728154294::1746894436::1::::<><><>0<>0<>caa6a262e933b18d4da982fd9c6781ad<>res://.godot/imported/debris2.png-e14a98b0b417419a482c7cc622ca5a4a.ctex::
 debris3.png::CompressedTexture2D::6004940540883079721::1728154319::1746894436::1::::<><><>0<>0<>5c5277f835c1c9e8b9e3c27c5d79328f<>res://.godot/imported/debris3.png-33493c6bdf88bb31e2c688051f69104b.ctex::
 debris4.png::CompressedTexture2D::5616159812428452894::1728154281::1746894436::1::::<><><>0<>0<>7814926b870191ed0983cf712bc9edb3<>res://.godot/imported/debris4.png-8ba484b060834c8721f16b01bea4e2ec.ctex::
+::res://Assets/Sprites/placeholder d'anim/::1746897322
+disque_accretion1.png::CompressedTexture2D::4649089108771455097::1728143267::1746897350::1::::<><><>0<>0<>d6d2c6c5874de1a4475bc160aa2f5f93<>res://.godot/imported/disque_accretion1.png-250b40268eb43d1c46222184e90d784c.ctex::
+flag1.png::CompressedTexture2D::3220845789697774397::1728210618::1746897350::1::::<><><>0<>0<>67375370c0f963022434137b883bdf96<>res://.godot/imported/flag1.png-1edcd61a40c0e707b8380af439089949.ctex::
+planet_anneau1.png::CompressedTexture2D::8607518074672085950::1728149080::1746897350::1::::<><><>0<>0<>7fdea73e9b78918f159b64f71e8c1b77<>res://.godot/imported/planet_anneau1.png-1ce2b71c48370f71b500399b178f89b1.ctex::
+planet_liberty1.png::CompressedTexture2D::7954167844423350462::1728082890::1746897350::1::::<><><>0<>0<>4ddec2248c61a008cd955dcd2894ea0b<>res://.godot/imported/planet_liberty1.png-b789330cfe3d94183a58b06956f4e356.ctex::
+soleil1.png::CompressedTexture2D::3985130807940686401::1728143287::1746897350::1::::<><><>0<>0<>3951ec627654da9ab78d0bb3c37942cb<>res://.godot/imported/soleil1.png-78b8ddc32e0b64f28bc0af21c8be6ce3.ctex::
 ::res://Assets/Sprites/stud/::1746894436
 le_stud2.png::CompressedTexture2D::8536811159657905285::1728165985::1746894436::1::::<><><>0<>0<>9f9134598598c26e685145e0ea91601e<>res://.godot/imported/le_stud2.png-42f23cc05f61a489edd356edd486ae72.ctex::
 le_stud3.png::CompressedTexture2D::2271291735867201460::1728166039::1746894436::1::::<><><>0<>0<>5c5bb84e3f9cc2de83760862c62c5479<>res://.godot/imported/le_stud3.png-555e1ff49bf4b9d3a16de4bc5e2bfb7c.ctex::
 le_stud4.png::CompressedTexture2D::549176168355080690::1728166090::1746894436::1::::<><><>0<>0<>5f9ca356585eab37e43fbc502d713970<>res://.godot/imported/le_stud4.png-850627b78bd26f7b4cb869896d1b9c65.ctex::
 le_stud.png::CompressedTexture2D::9061574617849998920::1728165917::1746894436::1::::<><><>0<>0<>80c613e8f073ffbd6a7490f0f49440a1<>res://.godot/imported/le_stud.png-6753ca3e56e07194141feca0bc27d160.ctex::
+::res://Scenes/::1746895851
+rocket.gd::GDScript::7316930360370851808::1746895832::0::1::::<>CharacterBody2D<><>0<>0<><>::
+test.tscn::PackedScene::724645029599886657::1746895836::0::1::::<><><>0<>0<><>::uid://cne6tp84k44ob::::res://Scenes/rocket.tscn
+rocket.tscn::PackedScene::5695470842717777977::1746895851::0::1::::<><><>0<>0<><>::uid://dcim1k1awl3m7::::res://Scenes/rocket.gd<>uid://80nsji6wxxty::::res://Assets/Sprites/rocket.png
